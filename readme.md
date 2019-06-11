@@ -1,4 +1,4 @@
-# BIP39 Tool
+# BIP39 Tool for Aphacon
 
 A tool for converting BIP39 mnemonic phrases to addresses and private keys.
 
