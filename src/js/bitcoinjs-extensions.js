@@ -62,6 +62,17 @@ bitcoinjs.bitcoin.networks.crown = {
   }
 };
 
+bitcoinjs.bitcoin.networks.alphacon = {
+  messagePrefix: '\x19Dogecoin Signed Message:\n',
+  bip32: {
+    public: 23,
+    private: 0x0488ade4
+  },
+  pubKeyHash: 23,
+  scriptHash: 0x10,
+  wif: 0xcc
+};
+
 bitcoinjs.bitcoin.networks.dash = {
   messagePrefix: 'unused',
   bip32: {
