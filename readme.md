@@ -4,7 +4,7 @@ A tool for converting BIP39 mnemonic phrases to addresses and private keys.
 
 ## Online Version
 
-https://iancoleman.io/bip39/
+https://olexh.github.io/bip39-alphacon/
 
 ## Standalone offline version
 
@@ -50,42 +50,6 @@ or for a direct bitcoin address, consider donating to the
 at 1PC9aZC4hNX2rmmrt7uHTfYAS3hRbph4UN
 
 ![alt text](https://static.fsf.org/nosvn/images/bitcoin_qrcodes/fsf.png "FSF Bitcoin Address")
-
-## Making changes
-
-Please do not make modifications to `bip39-standalone.html`, since they will
-be overwritten by `compile.py`.
-
-Make changes in `src/*`.
-
-Changes are applied during release using the command `python compile.py`, so
-please do not commit changes to `bip39-standalone.html`
-
-# Tests
-
-Tests depend on
-
-* nodejs
-* selenium webdriver - cd /path/to/bip39/tests; npm install
-* selenium driver for firefox ([geckodriver](https://github.com/mozilla/geckodriver/releases)) and / or chrome ([chromedriver](https://sites.google.com/a/chromium.org/chromedriver/downloads))
-* jasmine - npm install --global jasmine
-
-Before running tests, the site must be served at http://localhost:8000.
-
-```
-$ cd /path/to/bip39/src
-$ python -m http.server
-
-or for python2
-$ python -m SimpleHTTPServer
-```
-
-Run tests from the command-line
-
-```
-$ cd /path/to/bip39/tests
-$ jasmine spec/tests.js
-```
 
 # License
 
